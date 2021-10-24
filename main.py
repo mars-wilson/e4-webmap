@@ -5,17 +5,13 @@
 
 MAPFILE = 'data/map1.html'
 
-imort folium
-
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import folium
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    m = folium.Map(location=(35.61,-82.44), zoom=6)
+    m.save(MAPFILE)
+    
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
